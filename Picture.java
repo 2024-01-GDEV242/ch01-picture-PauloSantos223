@@ -13,6 +13,11 @@ public class Picture
     private Square wall;
     private Square window;
     private Square trunk;
+    private Square ground;
+    private Square ground2;
+    private Square ground3;
+    private Square ground4;
+    private Square ground5;
     private Triangle leaf1;
     private Triangle leaf2;
     private Triangle leaf3;
@@ -26,6 +31,11 @@ public class Picture
     public Picture()
     {
         wall = new Square();
+        ground = new Square();
+        ground2 = new Square();
+        ground3 = new Square();
+        ground4 = new Square();
+        ground5 = new Square();
         window = new Square();
         roof = new Triangle();  
         sun = new Circle();
@@ -47,6 +57,36 @@ public class Picture
             wall.changeSize(120);
             wall.makeVisible();
             
+            ground.moveHorizontal(-150);
+            ground.moveVertical(140);
+            ground.changeSize(150);
+            ground.makeVisible();
+            ground.changeColor("darkgreen");
+            
+            ground2.moveHorizontal(0);
+            ground2.moveVertical(140);
+            ground2.changeSize(150);
+            ground2.makeVisible();
+            ground2.changeColor("darkgreen");
+            
+            ground3.moveHorizontal(60);
+            ground3.moveVertical(140);
+            ground3.changeSize(150);
+            ground3.makeVisible();
+            ground3.changeColor("darkgreen");
+            
+            ground4.moveHorizontal(-300);
+            ground4.moveVertical(140);
+            ground4.changeSize(150);
+            ground4.makeVisible();
+            ground4.changeColor("darkgreen");
+            
+            ground5.moveHorizontal(-340);
+            ground5.moveVertical(140);
+            ground5.changeSize(150);
+            ground5.makeVisible();
+            ground5.changeColor("darkgreen");
+            
             trunk.moveHorizontal(60);
             trunk.moveVertical(120);
             trunk.changeSize(20);
@@ -60,27 +100,28 @@ public class Picture
             window.makeVisible();
             
             leaf1.changeColor("green");
-            leaf1.moveHorizontal(60);
-            leaf1.moveVertical(110);
-            leaf1.changeSize(40, 180);
+            leaf1.moveHorizontal(170);
+            leaf1.moveVertical(70);
+            leaf1.changeSize(40, 100);
             leaf1.makeVisible();
             
             leaf2.changeColor("green");
-            leaf2.moveHorizontal(60);
-            leaf2.moveVertical(90);
-            leaf2.changeSize(40, 180);
+            leaf2.moveHorizontal(170);
+            leaf2.moveVertical(50);
+            leaf2.changeSize(40, 100);
             leaf2.makeVisible();
             
             leaf3.changeColor("green");
-            leaf3.moveHorizontal(60);
-            leaf3.moveVertical(70);
-            leaf3.changeSize(40, 180);
+            leaf3.moveHorizontal(170);
+            leaf3.moveVertical(30);
+            leaf3.changeSize(40, 100);
             leaf3.makeVisible();
             
             roof.changeSize(60, 180);
             roof.moveHorizontal(20);
             roof.moveVertical(-60);
             roof.makeVisible();
+            roof.changeColor("brown");
     
             sun.changeColor("yellow");
             sun.moveHorizontal(230);
@@ -104,6 +145,11 @@ public class Picture
         leaf1.changeColor("black");
         leaf2.changeColor("black");
         leaf3.changeColor("black");
+        ground.changeColor("black");
+        ground2.changeColor("black");
+        ground3.changeColor("black");
+        ground4.changeColor("black");
+        ground5.changeColor("black");
     }
 
     /**
@@ -113,11 +159,16 @@ public class Picture
     {
         wall.changeColor("red");
         window.changeColor("black");
-        roof.changeColor("green");
+        roof.changeColor("brown");
         sun.changeColor("yellow");
         trunk.changeColor("brown");
         leaf1.changeColor("green");
         leaf2.changeColor("green");
         leaf3.changeColor("green");
+        ground.changeColor("darkgreen");
+        ground2.changeColor("darkgreen");
+        ground3.changeColor("darkgreen");
+        ground4.changeColor("darkgreen");
+        ground5.changeColor("darkgreen");
     }
 }
